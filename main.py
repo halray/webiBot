@@ -1,5 +1,5 @@
 """Readme :  pip install python-telegram-bot --upgrade"""
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler
 import requests
 from config import BOT_TOKEN, API_KEY,IDS_ALLOWED
 
@@ -85,9 +85,6 @@ def main():
 
     # movie_handler to be filled in by student
     dispatcher.add_handler(CommandHandler("movie", movie_handler))
-
-    # Optional content - fallback handler
-    dispatcher.add_handler(MessageHandler(Filters.all, fallback_handler))
 
     updater.start_polling()
     updater.idle()
