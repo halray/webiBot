@@ -1,8 +1,6 @@
 """Readme :  pip install python-telegram-bot --upgrade"""
-from telegram.ext import Updater, CommandHandler, MessageHandler, Application, CallbackQueryHandler,ContextTypes
+from telegram.ext import CommandHandler, Application, CallbackQueryHandler,ContextTypes
 from telegram import InlineKeyboardButton,InlineKeyboardMarkup,Update
-from telegram.constants import ParseMode
-import requests, requests
 import sys
 sys.path.append('../src/')
 from config import BOT_TOKEN, API_KEY,IDS_ALLOWED
